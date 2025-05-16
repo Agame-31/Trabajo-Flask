@@ -11,10 +11,16 @@ def home():
         <meta charset="UTF-8">
         <title>Mi Primera Pagina Web</title>
         <style>
-            body {
-                background: #d3d3d3;
+            html, body {
+                height: 100%;
                 margin: 0;
                 padding: 0;
+            }
+            body {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                background: #d3d3d3;
                 font-family: Arial, sans-serif;
             }
             .header, .footer {
@@ -31,8 +37,8 @@ def home():
                 padding: 16px 0 10px 0;
                 font-size: 1.1em;
                 border-radius: 12px 12px 0 0;
-                position: static;
-                margin-top: 30px;
+                margin-top: 0;
+                flex-shrink: 0;
             }
             .main-container {
                 background: #4176c5;
@@ -45,6 +51,7 @@ def home():
                 align-items: center;
                 justify-content: center;
                 gap: 40px;
+                flex: 1 0 auto;
             }
             .info-box {
                 background: #fff;
