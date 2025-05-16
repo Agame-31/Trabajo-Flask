@@ -132,7 +132,7 @@ def home():
                 </div>
             </div>
             <div class="image-box">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/PNG_transparency_demonstration_1.png/300px-PNG_transparency_demonstration_1.png" alt="Imagen de ejemplo">
+                <img src="https://mikeelectronica.com/cdn/shop/articles/B-MK_02_2121x.progressive.jpg?v=1607535378" alt="Imagen de ejemplo">
             </div>
         </div>
         <div class="footer">
