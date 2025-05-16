@@ -39,8 +39,8 @@ def home():
             }
             .container img {
                 width: 100%;
-                max-width: 500px;
-                margin-bottom: 20px;
+                max-width: 300px;
+                margin: 10px;
                 border-radius: 8px;
                 box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             }
@@ -57,6 +57,33 @@ def home():
                 left: 0;
                 letter-spacing: 1px;
             }
+            .info {
+                background: #fff;
+                color: #222;
+                border-radius: 8px;
+                padding: 18px;
+                margin-bottom: 20px;
+                text-align: center;
+                width: 90%;
+                max-width: 600px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            }
+            .enlace {
+                display: inline-block;
+                margin-top: 10px;
+                color: #4176c5;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .enlace:hover {
+                text-decoration: underline;
+            }
+            .imagenes {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
         </style>
     </head>
     <body>
@@ -64,8 +91,15 @@ def home():
             MI PRIMERA PAGINA WEB
         </div>
         <div class="container">
-            <img src="https://static.wikia.nocookie.net/southpark/images/5/5d/Butters_crying.png" alt="Imagen 1">
-            <img src="https://static.wikia.nocookie.net/southpark/images/5/5d/Butters_crying.png" alt="Imagen 2">
+            <div class="info">
+                <h1>Bienvenido a mi página</h1>
+                <p>Esta es una página web de ejemplo creada con Flask. Aquí puedes ver imágenes, enlaces y más contenido organizado con HTML.</p>
+                <a class="enlace" href="https://www.cesde.edu.co/" target="_blank">Visita el Instituto CESDE</a>
+            </div>
+            <div class="imagenes">
+                <img src="https://static.wikia.nocookie.net/southpark/images/5/5d/Butters_crying.png" alt="Imagen 1">
+                <img src="https://static.wikia.nocookie.net/southpark/images/5/5d/Butters_crying.png" alt="Imagen 2">
+            </div>
         </div>
         <div class="footer">
             INSTITUTO CESDE
