@@ -94,9 +94,6 @@ def home():
                 La Tecnología de la Información (TI) es un campo fundamental en la sociedad moderna, ya que permite gestionar, procesar, almacenar y transmitir información mediante el uso de sistemas computacionales y redes de comunicación. A través del desarrollo y la implementación de herramientas tecnológicas, las TI facilitan la automatización de procesos, la toma de decisiones y la interconexión entre personas, empresas y gobiernos.
                 </p>
             </div>
-            <div class="image-box">
-                <img src="https://static.wikia.nocookie.net/southpark/images/5/5d/Butters_crying.png" alt="Butters llorando">
-            </div>
         </div>
         <div class="footer">
             INSTITUTO CESDE
