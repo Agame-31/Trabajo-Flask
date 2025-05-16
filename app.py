@@ -44,6 +44,19 @@ def home():
                 border-radius: 8px;
                 box-shadow: 0 2px 8px rgba(0,0,0,0.08);
             }
+            .footer {
+                background: #4176c5;
+                color: #fff;
+                text-align: center;
+                padding: 16px 0 10px 0;
+                font-size: 1.1em;
+                border-radius: 12px 12px 0 0;
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+                left: 0;
+                letter-spacing: 1px;
+            }
         </style>
     </head>
     <body>
@@ -53,6 +66,9 @@ def home():
         <div class="container">
             <img src="https://static.wikia.nocookie.net/southpark/images/5/5d/Butters_crying.png" alt="Imagen 1">
             <img src="https://static.wikia.nocookie.net/southpark/images/5/5d/Butters_crying.png" alt="Imagen 2">
+        </div>
+        <div class="footer">
+            INSTITUTO CESDE
         </div>
     </body>
     </html>
