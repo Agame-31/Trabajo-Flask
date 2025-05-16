@@ -120,7 +120,7 @@ def home():
     </head>
     <body>
         <div class="header">
-            MI PRIMERA PAGINA WEB
+            AREA DE TECNOLOGIA DE LA INFORMACION
         </div>
         <div class="main-container">
             <div class="info-box">
@@ -136,7 +136,7 @@ def home():
             </div>
         </div>
         <div class="footer">
-            INSTITUTO CESDE
+            EQUIPO DE DESARROLLO WEB
         </div>
     </body>
     </html>
