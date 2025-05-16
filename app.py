@@ -17,72 +17,70 @@ def home():
                 padding: 0;
                 font-family: Arial, sans-serif;
             }
-            .header {
+            .header, .footer {
                 background: #4176c5;
                 color: #fff;
                 text-align: center;
                 padding: 24px 0 12px 0;
                 font-size: 1.3em;
                 border-radius: 0 0 12px 12px;
-                margin-bottom: 30px;
                 letter-spacing: 1px;
-            }
-            .container {
-                background: #4176c5;
-                border-radius: 0.5em;
-                max-width: 650px;
-                margin: 40px auto;
-                padding: 30px 30px;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .container img {
-                width: 100%;
-                max-width: 300px;
-                margin: 10px;
-                border-radius: 8px;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                margin-bottom: 0;
             }
             .footer {
-                background: #4176c5;
-                color: #fff;
-                text-align: center;
                 padding: 16px 0 10px 0;
                 font-size: 1.1em;
                 border-radius: 12px 12px 0 0;
-                position: fixed;
-                width: 100%;
-                bottom: 0;
-                left: 0;
-                letter-spacing: 1px;
+                position: static;
+                margin-top: 30px;
             }
-            .info {
-                background: #fff;
-                color: #222;
-                border-radius: 8px;
-                padding: 18px;
-                margin-bottom: 20px;
-                text-align: center;
-                width: 90%;
-                max-width: 600px;
-                box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-            }
-            .enlace {
-                display: inline-block;
-                margin-top: 10px;
-                color: #4176c5;
-                text-decoration: none;
-                font-weight: bold;
-            }
-            .enlace:hover {
-                text-decoration: underline;
-            }
-            .imagenes {
+            .main-container {
+                background: #4176c5;
+                border-radius: 0.5em;
+                max-width: 900px;
+                margin: 40px auto;
+                padding: 40px 30px 40px 30px;
                 display: flex;
+                flex-direction: row;
+                align-items: center;
                 justify-content: center;
-                gap: 20px;
-                flex-wrap: wrap;
+                gap: 40px;
+            }
+            .info-box {
+                background: #fff;
+                color: #e3eaf7;
+                border-radius: 8px;
+                padding: 28px 24px;
+                text-align: center;
+                width: 400px;
+                max-width: 100%;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+                font-size: 1.2em;
+                color: #e3eaf7;
+                background: #4176c5;
+                border: 0;
+            }
+            .info-box p {
+                color: #fff;
+                margin: 0;
+                font-size: 1.1em;
+                line-height: 1.5em;
+            }
+            .image-box img {
+                width: 350px;
+                max-width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                background: #fff;
+            }
+            @media (max-width: 900px) {
+                .main-container {
+                    flex-direction: column;
+                    gap: 20px;
+                }
+                .info-box, .image-box img {
+                    width: 100%;
+                }
             }
         </style>
     </head>
@@ -90,15 +88,14 @@ def home():
         <div class="header">
             MI PRIMERA PAGINA WEB
         </div>
-        <div class="container">
-            <div class="info">
-                <h1>Bienvenido a mi página</h1>
-                <p>Esta es una página web de ejemplo creada con Flask. Aquí puedes ver imágenes, enlaces y más contenido organizado con HTML.</p>
-                <a class="enlace" href="https://www.cesde.edu.co/" target="_blank">Visita el Instituto CESDE</a>
+        <div class="main-container">
+            <div class="info-box">
+                <p>
+                La Tecnología de la Información (TI) es un campo fundamental en la sociedad moderna, ya que permite gestionar, procesar, almacenar y transmitir información mediante el uso de sistemas computacionales y redes de comunicación. A través del desarrollo y la implementación de herramientas tecnológicas, las TI facilitan la automatización de procesos, la toma de decisiones y la interconexión entre personas, empresas y gobiernos.
+                </p>
             </div>
-            <div class="imagenes">
-                <img src="https://static.wikia.nocookie.net/southpark/images/5/5d/Butters_crying.png" alt="Imagen 1">
-                <img src="https://static.wikia.nocookie.net/southpark/images/5/5d/Butters_crying.png" alt="Imagen 2">
+            <div class="image-box">
+                <img src="https://static.wikia.nocookie.net/southpark/images/5/5d/Butters_crying.png" alt="Butters llorando">
             </div>
         </div>
         <div class="footer">
