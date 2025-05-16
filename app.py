@@ -132,7 +132,7 @@ def home():
                 </div>
             </div>
             <div class="image-box">
-                <img src="https://mikeelectronica.com/cdn/shop/articles/B-MK_02_2121x.progressive.jpg?v=1607535378" alt="Imagen de ejemplo">
+                <img src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg" alt="Imagen de ejemplo">
             </div>
         </div>
         <div class="footer">
